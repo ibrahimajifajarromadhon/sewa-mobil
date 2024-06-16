@@ -1,33 +1,33 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
-import StartPage from "./pages/StartPage"
-import LoginPage from "./pages/LoginPage"
-import KodeVerifikasiPage from "./pages/KodeVerifikasiPage"
-import RekomendasiMobilPage from "./pages/RekomendasiMobilPage"
-import CatalogMobilPage from "./pages/CatalogMobilPage"
-import PembayaranPage from "./pages/PembayaranPage"
-import ConfirmPembayaranPage from "./pages/ConfirmPembayaranPage"
-import SuccessPage from "./pages/SuccessPage"
-import UlasanPage from "./pages/UlasanPage"
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import StartPage from "./pages/StartPage";
+import LoginPage from "./pages/LoginPage";
+import KodeVerifikasiPage from "./pages/KodeVerifikasiPage";
+import RecommendCarPage from "./pages/RecomendCarPage";
+import CatalogCarPage from "./pages/CatalogCarPage";
+import PayPage from "./pages/PayPage";
+import ConfirmPayPage from "./pages/ConfirmPayPage";
+import SuccessPage from "./pages/SuccessPage";
+import ReviewPage from "./pages/ReviewPage";
+import HomePage from "./pages/HomePage";
 const App = () => {
-
   return (
     <>
       <Router>
         <Routes>
-          <Route path="/" element={<StartPage/>} />
-          <Route path="/login" element={<LoginPage/>} />
-          <Route path="/kode" element={<KodeVerifikasiPage/>} />
-          <Route path="/home" element={<RekomendasiMobilPage/>} />
-          <Route path="/catalog" element={<CatalogMobilPage/>} />
-          <Route path="/bayar" element={<PembayaranPage/>} />
-          <Route path="/confirm" element={<ConfirmPembayaranPage/>} />
-          <Route path="/success" element={<SuccessPage/>} />
-          <Route path="/ulasan" element={<UlasanPage/>} />
+          <Route path="/" element={<StartPage />} />
+          <Route path="/login" element={<LoginPage />} />
+          <Route path="/kode" element={<KodeVerifikasiPage />} />
+          <Route path="/home" element={<HomePage />} />
+          <Route path="/rekomendasi" element={<RecommendCarPage />} />
+          <Route path="/catalog" element={<CatalogCarPage />} />
+          <Route path="/bayar" element={<PayPage />} />
+          <Route path="/confirm" element={<ConfirmPayPage />} />
+          <Route path="/success" element={<SuccessPage />} />
+          <Route path="/ulasan" element={<ReviewPage />} />
         </Routes>
       </Router>
     </>
-    
-  )
-}
+  );
+};
 
-export default App
+export default App;

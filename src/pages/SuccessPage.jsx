@@ -1,25 +1,27 @@
 import { Link } from "react-router-dom";
+import Button from "../components/Elements/Button";
+import PlainLayouts from "../components/Layouts/PlainLayouts";
 
 const SuccessPage = () => {
   return (
-    <div className="flex justify-center my-32">
+    <PlainLayouts style="my-32">
       <div className="flex flex-col items-center justify-center">
-        <img src="../src/assets/success.svg" alt="" className="w-1/3" />
+        <img src="../src/assets/images/success.svg" alt="" className="w-1/3" />
         <h1 className="text-5xl font-black my-5">Transaksi Berhasil</h1>
         <div className="flex justiy-between gap-5">
-          <Link to="/confirm">
-            <button className="bg-gray-600 px-14 h-12 rounded-md mt-5 font-bold text-white">
+          <Link to="/home">
+            <Button style="rounded-full text-white font-medium text-lg bg-black px-12 h-12 mt-5">
               Kembali Ke Home
-            </button>
+            </Button>
           </Link>
           <Link to="/ulasan">
-            <button className="bg-gray-600 px-12 h-12 rounded-md mt-5 font-bold text-white">
+            <Button style="rounded-full text-white font-medium text-lg bg-black px-10 h-12 mt-5">
               Ulasan
-            </button>
+            </Button>
           </Link>
         </div>
       </div>
-    </div>
+    </PlainLayouts>
   );
 };
 
