@@ -1,14 +1,14 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import StartPage from "./pages/StartPage";
-import LoginPage from "./pages/LoginPage";
-import KodeVerifikasiPage from "./pages/KodeVerifikasiPage";
-import RecommendCarPage from "./pages/RecomendCarPage";
-import CatalogCarPage from "./pages/CatalogCarPage";
-import PayPage from "./pages/PayPage";
-import ConfirmPayPage from "./pages/ConfirmPayPage";
-import SuccessPage from "./pages/SuccessPage";
-import ReviewPage from "./pages/ReviewPage";
-import HomePage from "./pages/HomePage";
+import StartPage from "./pages/Auths/StartPage";
+import LoginPage from "./pages/Auths/LoginPage";
+import KodeVerifikasiPage from "./pages/Auths/KodeVerifikasiPage";
+import RecommendCarPage from "./pages/Cars/RecomendCarPage";
+import CatalogCarPage from "./pages/Cars/CatalogCarPage";
+import PayPage from "./pages/Pays/PayPage";
+import ConfirmPayPage from "./pages/Pays/ConfirmPayPage";
+import SuccessPage from "./pages/Pays/SuccessPage";
+import ReviewPage from "./pages/Cars/ReviewPage";
+import HomePage from "./pages/Auths/HomePage";
 const App = () => {
   return (
     <>

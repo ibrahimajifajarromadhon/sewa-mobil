@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
-import Button from "../components/Elements/Button";
-import NormalLayouts from "../components/Layouts/NormalLayouts";
+import Button from "../../components/Elements/Button";
+import NormalLayouts from "../../components/Layouts/NormalLayouts";
 
 const LoginPage = () => {
   return (

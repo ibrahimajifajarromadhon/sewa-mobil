@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
-import Button from "../components/Elements/Button";
-import PlainLayouts from "../components/Layouts/PlainLayouts";
+import Button from "../../components/Elements/Button";
+import PlainLayouts from "../../components/Layouts/PlainLayouts";
 
 const SuccessPage = () => {
   return (

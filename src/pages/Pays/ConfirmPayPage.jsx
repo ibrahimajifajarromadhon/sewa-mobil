@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
-import PayLayouts from "../components/Layouts/PayLayouts";
-import Button from "../components/Elements/Button";
+import PayLayouts from "../../components/Layouts/PayLayouts";
+import Button from "../../components/Elements/Button";
 
 const ConfirmPayPage = () => {
   return (

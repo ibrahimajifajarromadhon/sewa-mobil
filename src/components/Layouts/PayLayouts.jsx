@@ -16,9 +16,9 @@ const PayLayouts = ({ children, style, style1 }) => {
           </div>
           <div className="w-1/6">
             <h1 className="font-bold mb-5">Socials</h1>
+            <h1 className="font-light my-3">Whatsapp</h1>
             <h1 className="font-light my-3">Instagram</h1>
             <h1 className="font-light my-3">Facebook</h1>
-            <h1 className="font-light my-3">Whatsapp</h1>
           </div>
         </div>
       </div>

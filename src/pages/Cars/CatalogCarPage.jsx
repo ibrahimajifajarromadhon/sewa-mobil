@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
-import CardMobil from "../components/Fragments/CardMobil";
-import Button from "../components/Elements/Button";
-import NormalLayouts from "../components/Layouts/NormalLayouts";
+import CardMobil from "../../components/Fragments/CardMobil";
+import Button from "../../components/Elements/Button";
+import NormalLayouts from "../../components/Layouts/NormalLayouts";
 
 const cars = [
   {
