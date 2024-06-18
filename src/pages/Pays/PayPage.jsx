@@ -1,8 +1,11 @@
+// mengimpor modul-modul yang diperlukan
 import { Link } from "react-router-dom";
 import PayLayouts from "../../components/Layouts/PayLayouts";
 import Button from "../../components/Elements/Button";
 
+// sebuah arrow function untuk mengatur halaman pay
 const PayPage = () => {
+  // mengembalikan component pay
   return (
     <PayLayouts style="mb-96" style1="mt-96">
       <Link to="/catalog">
@@ -285,4 +288,5 @@ const PayPage = () => {
   );
 };
 
+// mengexport fungsi PayPage
 export default PayPage;

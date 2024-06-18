@@ -1,9 +1,13 @@
 /* eslint-disable no-unused-vars */
 /* eslint-disable react/prop-types */
+
+// mengimpor modul-modul yang diperlukan
 import { Link } from "react-router-dom";
 import Button from "../Elements/Button";
 
+//sebuah arrow function untuk mengatur card mobil yang berisi header, body dan footer
 const CardMobil = ({ children }) => {
+  // mengembalikan component card mobil
   return (
     <div className="bg-white rounded-xl flex flex-col justify-between p-5 shadow-lg border border-gray-200">
       {children}
@@ -11,7 +15,9 @@ const CardMobil = ({ children }) => {
   );
 };
 
+//sebuah arrow function untuk mengatur component header
 const Header = ({ name, merk }) => {
+  // mengembalikan component header
   return (
     <div>
       <h1 className="text-xl font-extrabold">{name}</h1>
@@ -20,7 +26,9 @@ const Header = ({ name, merk }) => {
   );
 };
 
+// sebuah arrow function untuk mengatur component body
 const Body = ({ images }) => {
+  // mengembalikan component body
   return (
     <div>
       <img src={images} alt="" className="w-full max-h-96 py-10" />
@@ -28,7 +36,9 @@ const Body = ({ images }) => {
   );
 };
 
+// sebuah arrow function untuk mengatur component footer
 const Footer = ({ price, long }) => {
+  // mengembalikan component footer
   return (
     <div className="flex justify-between">
       <div>
@@ -44,8 +54,10 @@ const Footer = ({ price, long }) => {
   );
 };
 
+// mengimpor fungsi header, body dan footer
 CardMobil.Header = Header;
 CardMobil.Body = Body;
 CardMobil.Footer = Footer;
 
+// mengexport fungsi cardnya
 export default CardMobil;

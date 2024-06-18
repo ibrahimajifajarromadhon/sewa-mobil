@@ -1,7 +1,9 @@
+// mengimpor modul-modul yang diperlukan
 import { Link } from "react-router-dom";
 import Button from "../../components/Elements/Button";
 import PlainLayouts from "../../components/Layouts/PlainLayouts";
 
+// sebuah arrow function untuk mengatur halaman success
 const SuccessPage = () => {
   return (
     <PlainLayouts style="my-32">
@@ -25,4 +27,5 @@ const SuccessPage = () => {
   );
 };
 
+// mengexport fungsi success
 export default SuccessPage;

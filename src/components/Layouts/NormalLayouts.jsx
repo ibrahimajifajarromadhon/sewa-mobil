@@ -1,5 +1,8 @@
 /* eslint-disable react/prop-types */
+
+// sebuah arrow function untuk mengatur layout normal
 const NormalLayouts = ({ children, style }) => {
+  // mengembalikan component layout normal
   return (
     <div className="min-h-screen flex flex-col">
       <div className="bg-gradient-to-r from-blue-300 to-gray-300 w-full p-5 px-10 text-black">
@@ -45,4 +48,5 @@ const NormalLayouts = ({ children, style }) => {
   );
 };
 
+// mengexport fungsi normal layout
 export default NormalLayouts;

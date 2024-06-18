@@ -1,7 +1,9 @@
+// mengimpor modul-modul yang diperlukan
 import { Link } from "react-router-dom";
 import Button from "../../components/Elements/Button";
 import NormalLayouts from "../../components/Layouts/NormalLayouts";
 
+// sebuah variabel untuk menampung data cara kerja
 const channels = [
   {
     id: 1,
@@ -23,7 +25,9 @@ const channels = [
   }
 ]
 
+// sebuah arrow function untuk mengatur halaman home
 const HomePage = () => {
+  // mengembalikan component halaman home
   return (
     <NormalLayouts style="mt-96">
       <div className="bg w-full h-96 flex flex-col">
@@ -100,4 +104,5 @@ const HomePage = () => {
   );
 };
 
+// mengexport fungsi halaman home
 export default HomePage;

@@ -1,7 +1,9 @@
+// mengimpor modul-modul yang diperlukan
 import { Link } from "react-router-dom";
 import Button from "../../components/Elements/Button";
 import NormalLayouts from "../../components/Layouts/NormalLayouts";
 
+// sebuah variabel yang berisi data mobil
 const cars = [
   {
     id: 1,
@@ -23,7 +25,9 @@ const cars = [
   },
 ];
 
+// sebuah arrow function untuk mengatur halaman rekomendasi mobil
 const RecommendCarPage = () => {
+  // mengembalikan component rekomendasi mobil
   return (
     <NormalLayouts style="mt-64">
       <div className="bg w-full h-96 flex flex-col items-center">
@@ -58,4 +62,5 @@ const RecommendCarPage = () => {
   );
 };
 
+// mengexport fungsi rekomendasi mobil
 export default RecommendCarPage;

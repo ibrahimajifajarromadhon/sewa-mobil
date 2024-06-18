@@ -1,7 +1,9 @@
+// mengimpor modul-modul yang diperlukan
 import { Link } from "react-router-dom";
 import PlainLayouts from "../../components/Layouts/PlainLayouts";
 import Button from "../../components/Elements/Button";
 
+// sebuah variabel untuk menampung data ulasan
 const reviews = [
   {
     id: 1,
@@ -77,7 +79,9 @@ const reviews = [
   },
 ];
 
+// sebuah arrow function untuk mengatur halaman ulasan
 const ReviewPage = () => {
+  // mengembalikan component ulasan
   return (
     <PlainLayouts style="my-10">
       <div className="flex flex-col items-center justify-center w-full px-5">
@@ -136,4 +140,5 @@ const ReviewPage = () => {
   );
 };
 
+// mengexport fungsi ulasan
 export default ReviewPage;

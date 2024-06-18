@@ -1,8 +1,11 @@
+// mengimpor modul-modul yang diperlukan
 import { Link } from "react-router-dom";
 import PayLayouts from "../../components/Layouts/PayLayouts";
 import Button from "../../components/Elements/Button";
 
+// sebuah arrow function untuk mengatur halaman confirm pay
 const ConfirmPayPage = () => {
+  // mengembalikan component confirm pay
   return (
     <PayLayouts>
       <Link to="/bayar">
@@ -102,4 +105,5 @@ const ConfirmPayPage = () => {
   );
 };
 
+// mengexport fungsi confirm pay
 export default ConfirmPayPage;

@@ -1,7 +1,9 @@
+// mengimpor modul-modul yang diperlukan
 import { Link } from "react-router-dom";
 import Button from "../../components/Elements/Button";
 import NormalLayouts from "../../components/Layouts/NormalLayouts";
 
+// sebuah arrow function untuk mengatur halaman start
 const StartPage = () => {
   return (
     <NormalLayouts>
@@ -16,4 +18,5 @@ const StartPage = () => {
   );
 };
 
+// mengexport fungsi start
 export default StartPage;

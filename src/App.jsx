@@ -1,3 +1,4 @@
+// mengimpor modul-modul yang diperlukan
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import StartPage from "./pages/Auths/StartPage";
 import LoginPage from "./pages/Auths/LoginPage";
@@ -9,11 +10,13 @@ import ConfirmPayPage from "./pages/Pays/ConfirmPayPage";
 import SuccessPage from "./pages/Pays/SuccessPage";
 import ReviewPage from "./pages/Cars/ReviewPage";
 import HomePage from "./pages/Auths/HomePage";
+
 const App = () => {
   return (
     <>
       <Router>
         <Routes>
+          {/* definisi rute untuk setiap halaman lainnya */}
           <Route path="/" element={<StartPage />} />
           <Route path="/login" element={<LoginPage />} />
           <Route path="/kode" element={<KodeVerifikasiPage />} />

@@ -1,8 +1,10 @@
+// mengimpor modul-modul yang diperlukan
 import { Link } from "react-router-dom";
 import CardMobil from "../../components/Fragments/CardMobil";
 import Button from "../../components/Elements/Button";
 import NormalLayouts from "../../components/Layouts/NormalLayouts";
 
+// sebuah variabel untuk menampung data mobil
 const cars = [
   {
     id: 1,
@@ -70,7 +72,9 @@ const cars = [
   },
 ];
 
+// sebuah arrow function untuk mengatur halaman daftar mobil
 const CatalogCarPage = () => {
+  // mengembalikan component daftar mobil
   return (
     <NormalLayouts>
       <div className="bg w-full flex flex-col px-10">
@@ -99,4 +103,5 @@ const CatalogCarPage = () => {
   );
 };
 
+// mengexport fungsi daftar mobil
 export default CatalogCarPage;

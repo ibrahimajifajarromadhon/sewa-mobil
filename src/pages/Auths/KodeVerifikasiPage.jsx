@@ -1,8 +1,11 @@
+// mengimpor modul-modul yang diperlukan
 import { Link } from "react-router-dom";
 import Button from "../../components/Elements/Button";
 import NormalLayouts from "../../components/Layouts/NormalLayouts";
 
+// sebuah arrow function untuk mengatur halaman kode verifikasi
 const KodeVerifikasiPage = () => {
+  // mengembalikan component kode verifikasi
   return (
     <NormalLayouts>
       <div className="bg w-full h-96 flex flex-col items-center justify-center">
@@ -23,4 +26,5 @@ const KodeVerifikasiPage = () => {
   );
 };
 
+// mengexport fungsi kode verifikasi
 export default KodeVerifikasiPage;
